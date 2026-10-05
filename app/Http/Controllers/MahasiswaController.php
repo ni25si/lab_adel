@@ -33,14 +33,14 @@ class MahasiswaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $param1)
     {
-        return "Data mahasiswa: ".$param1;
-        if($param 1 == 'detail'){
-            return view ('halaman-mahasiswa-detail');
-        }else if($param1 == 'profil'){
-            return view('halaman-mahasiswa-profil');
-        }
+       if($param1 == 'detail'){
+        return view('halaman-mahasiswa-detail');
+       }
+       else if ($param1 == 'profil'){
+        return view('halaman-mahasiswa-profil');
+       }
     }
 
     /**
