@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -51,4 +52,8 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 
 Route::resource('pelanggan', PelangganController::class);
 
+<<<<<<< HEAD
 Route::resource('users', UserController::class);
+=======
+Route::resource('user', UserController::class);
+>>>>>>> 9bacf7bbeff680a8489dfd9b6dcd19ba2a5a3ff1
